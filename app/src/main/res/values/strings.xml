@@ -3,8 +3,8 @@
     <string name="btn_start">Pulsar</string>
     <string name="hint_name">Escribí tu nombre</string>
     <string name="greeting">Hola %1$s</string>
-    
-<!--    ICC-->
+
+    <!--    ICC-->
     <string name="Female">Mujer</string>
     <string name="Hombre">Hombre</string>
     <string name="Altura">Altura</string>
@@ -32,8 +32,8 @@
     <string name="error">Error</string>
     <string name="SaludarApp">SaludarApp</string>
     <string name="IMCApp">IMCApp</string>
-    
-<!--    Todo-->
+
+    <!--    Todo-->
     <string name="ToDoApp">ToDoApp</string>
     <string name="todo_title">titulo</string>
     <string name="todo_category">Categoria</string>
@@ -44,4 +44,9 @@
     <string name="todo_Personal">Personal</string>
     <string name="todo_other">Otros</string>
     <string name="todo_creater_task">Crear Tarea</string>
+
+<!--    HERO-->
+    <string name="heroApp">HeroApp</string>
+    <string name="hero_description">description</string>
+
 </resources>

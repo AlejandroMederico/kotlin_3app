@@ -32,4 +32,12 @@
         android:layout_marginTop="10dp"
         android:background="@color/purple_500"
         android:text="@string/ToDoApp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnHeroApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/peso_normal"
+        android:text="@string/heroApp" />
 </LinearLayout>
