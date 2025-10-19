@@ -1,5 +1,6 @@
 package com.mederico.android.superheroapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -20,11 +21,15 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.Retrofit.Builder
 
 
-
 class SuperHeroListActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySuperHeroListBinding
     private lateinit var retrofit: Retrofit
     private lateinit var adapter: SuperHeroAdapter
+
+    companion object {
+        const val EXTRA_ID = "extra_id"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -38,6 +43,7 @@ class SuperHeroListActivity : AppCompatActivity() {
         retrofit = getRetrofit()
         initUI()
     }
+
     private fun initUI() {
         binding.svSuperHereo.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
@@ -50,35 +56,46 @@ class SuperHeroListActivity : AppCompatActivity() {
             }
         })
 
-        adapter = SuperHeroAdapter()
+        adapter = SuperHeroAdapter() { navigateToDetail(it) }
         binding.rvSuperHeroList.setHasFixedSize(true)
         binding.rvSuperHeroList.layoutManager = LinearLayoutManager(this)
         binding.rvSuperHeroList.adapter = adapter
     }
+
     private fun searchByName(query: String) {
         binding.progressBar.isVisible = true
         CoroutineScope(Dispatchers.IO).launch {
-            val myResponse: Response<SuperHeroDataResponse> = retrofit.create(ApiService::class.java).getSuperHeroes(query)
+            val myResponse: Response<SuperHeroDataResponse> =
+                retrofit.create(ApiService::class.java).getSuperHeroes(query)
             if (myResponse.isSuccessful) {
                 Log.i("mederico", "Funciona :)")
                 val response: SuperHeroDataResponse? = myResponse.body()
                 if (response != null) {
                     Log.i("mederico", response.toString())
                     runOnUiThread {
-                        adapter.updateList(response.results)
+                        adapter.updateList(response.results ?: emptyList())
                         binding.progressBar.isVisible = false
                     }
                 }
-            }else{
+            } else {
                 Log.i("mederico", "No funciona :(")
+                runOnUiThread {
+                    binding.progressBar.isVisible = false
+                }
             }
         }
     }
-
-    private fun getRetrofit(): Retrofit{
+    private fun getRetrofit(): Retrofit {
         return Builder()
             .baseUrl("https://www.superheroapi.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+    }
+
+    private fun navigateToDetail(id: String) {
+        val intent = Intent(this, DetailSuperHeroActivity::class.java)
+        intent.putExtra(EXTRA_ID, id)
+        startActivity(intent)
+
     }
 }

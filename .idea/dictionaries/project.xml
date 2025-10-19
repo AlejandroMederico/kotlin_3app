@@ -6,6 +6,7 @@
       <w>altura</w>
       <w>aumentar</w>
       <w>bajo</w>
+      <w>combate</w>
       <w>crear</w>
       <w>creater</w>
       <w>descripcione</w>
@@ -15,9 +16,11 @@
       <w>escribí</w>
       <w>fedcdcfa</w>
       <w>forma</w>
+      <w>fuerza</w>
       <w>hereo</w>
       <w>hábitos</w>
       <w>imcapp</w>
+      <w>inteligencia</w>
       <w>mejorar</w>
       <w>mujer</w>
       <w>necesitar</w>
@@ -26,12 +29,15 @@
       <w>obesidad</w>
       <w>otros</w>
       <w>peligro</w>
+      <w>poder</w>
       <w>podrías</w>
+      <w>powerstats</w>
       <w>prueba</w>
       <w>rango</w>
       <w>realizar</w>
       <w>recalcular</w>
       <w>recomendable</w>
+      <w>resistencia</w>
       <w>resultado</w>
       <w>saludable</w>
       <w>saludar</w>
@@ -42,6 +48,7 @@
       <w>superheroapp</w>
       <w>tarea</w>
       <w>titulo</w>
+      <w>velocidad</w>
     </words>
   </dictionary>
 </component>

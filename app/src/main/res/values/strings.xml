@@ -45,8 +45,16 @@
     <string name="todo_other">Otros</string>
     <string name="todo_creater_task">Crear Tarea</string>
 
-<!--    HERO-->
+    <!--    HERO-->
     <string name="heroApp">HeroApp</string>
     <string name="hero_description">description</string>
+    <string name="hero_intelligence">Inteligencia</string>
+    <string name="hero_strength">Fuerza</string>
+    <string name="hero_speed">Velocidad</string>
+    <string name="hero_durability">Resistencia</string>
+    <string name="hero_power">Poder</string>
+    <string name="hero_combat">Combate</string>
+
+
 
 </resources>
