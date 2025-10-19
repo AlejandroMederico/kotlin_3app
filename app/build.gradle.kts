@@ -52,7 +52,9 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")
 //    Picasso
     implementation("com.squareup.picasso:picasso:2.8")
-
+// dataStore
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+//    testImplementation
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

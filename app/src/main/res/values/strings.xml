@@ -55,6 +55,20 @@
     <string name="hero_power">Poder</string>
     <string name="hero_combat">Combate</string>
 
+<!--    setting-->
+    <string name="settingApp">"settingApp"</string>
+    <string name="setting_modo_black">Modo Oscuro</string>
+    <string name="setting_modo_black_description">Activa el modo oscuro para una mejor experiencia visual</string>
+    <string name="setting_bluetooth">Activar Bluetooth</string>
+    <string name="setting_bluetooth_description">Activa el modo Bluetooth para una mejor comunicación</string>
+    <string name="setting_volumen">Volumen</string>
+    <string name="setting_volumen_description">Ajusta el volumen de la aplicación</string>
+    <string name="setting_mute">Mute</string>
+    <string name="setting_mute_description">Mute la aplicación para  llamadas telefónicas</string>
+    <string name="setting_vibration">Vibracion</string>
+    <string name="setting_vibration_description">Activa la vibración de la aplicación"</string>
+
+
 
 
 </resources>

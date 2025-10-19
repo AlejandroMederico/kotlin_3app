@@ -7,6 +7,7 @@ Este repositorio contiene una colección de aplicaciones de Android, cada una di
 1.  **To-Do App:** Una aplicación de lista de tareas.
 2.  **IMC App:** Una calculadora de Índice de Masa Corporal (IMC).
 3.  **First App:** Una aplicación sencilla para pasar datos entre `Activities`.
+4.  **Superhero App:** Una aplicación para buscar superhéroes y ver sus detalles.
 
 ---
 
@@ -58,19 +59,39 @@ La pantalla principal contiene un campo de texto donde el usuario puede escribir
 *   **Navegación entre Activities:** Usa un `Intent` para iniciar una segunda `Activity`.
 *   **Paso de Datos:** Pasa el nombre del usuario de la primera `Activity` a la segunda utilizando los `extras` del `Intent`.
 
+---
+
+## 4. Superhero App
+
+Una aplicación para buscar superhéroes y ver sus detalles.
+
+### Descripción
+
+Esta aplicación permite a los usuarios buscar superhéroes por su nombre y ver información detallada sobre ellos. La aplicación utiliza la API de `superheroapi.com` para obtener los datos.
+
+### Características
+
+*   **Búsqueda de Superhéroes:** Busca superhéroes por nombre.
+*   **Lista de Resultados:** Muestra los resultados de la búsqueda en una lista.
+*   **Vista de Detalles:** Muestra información detallada de un superhéroe, incluyendo sus estadísticas de poder, biografía e imagen.
+*   **Consumo de API REST:** Utiliza Retrofit para realizar peticiones a una API REST.
+*   **Coroutines:** Para manejar operaciones asíncronas.
+
 ## Tecnologías Utilizadas
 
 *   **Kotlin:** Lenguaje de programación principal.
 *   **Android SDK:** Kit de desarrollo de software para Android.
 *   **View Binding / FindViewById:** Para acceder a las vistas del layout.
-*   **RecyclerView:** Para mostrar listas eficientes de tareas y categorías en la To-Do App.
+*   **RecyclerView:** Para mostrar listas eficientes de tareas y categorías en la To-Do App y la Superhero App.
 *   **Material Components:** Para elementos de la interfaz de usuario.
 *   **Intents:** Para la comunicación entre `Activities`.
+*   **Retrofit:** Para el consumo de APIs REST en la Superhero App.
+*   **Coroutines:** Para manejar operaciones asíncronas en la Superhero App.
 
 ## Cómo Empezar
 
 1.  Clona este repositorio.
 2.  Ábrelo en Android Studio.
 3.  Sincroniza el proyecto con los archivos de Gradle.
-4.  Selecciona la aplicación que deseas ejecutar en la configuración de ejecución (por ejemplo, `app`, `imcapp`, o `firstapp`).
+4.  Selecciona la aplicación que deseas ejecutar en la configuración de ejecución (por ejemplo, `app`, `imcapp`, `firstapp` o `superheroapp`).
 5.  Ejecuta la aplicación en un emulador o en un dispositivo físico.

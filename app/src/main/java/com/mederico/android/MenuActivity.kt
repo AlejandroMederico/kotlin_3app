@@ -9,6 +9,7 @@ import android.widget.Button
 import android.content.Intent
 import com.mederico.android.firstapp.FirstAppActivity
 import com.mederico.android.imcapp.ImcActivity
+import com.mederico.android.settings.SettingsActivity
 import com.mederico.android.superheroapp.SuperHeroListActivity
 import com.mederico.android.todoapp.ToDoAppActivity
 
@@ -27,11 +28,13 @@ class MenuActivity : AppCompatActivity() {
         val btnIMCApp = findViewById<Button>(R.id.btnIMCApp)
         val btnToDoApp = findViewById<Button>(R.id.btnToDoApp)
         val btnHeroApp = findViewById<Button>(R.id.btnHeroApp)
+        val btnSettings = findViewById<Button>(R.id.btnSettings)
 
         btnSaludarApp.setOnClickListener { navigateToSaludarApp() }
         btnIMCApp.setOnClickListener { navigateToIMCApp() }
         btnToDoApp.setOnClickListener { navigatetoDoApp() }
         btnHeroApp.setOnClickListener { navigateToHeroApp() }
+        btnSettings.setOnClickListener { navigateToSettings() }
 
     }
 
@@ -52,6 +55,10 @@ class MenuActivity : AppCompatActivity() {
 
     fun navigateToHeroApp(): Unit {
         val intent = Intent(this, SuperHeroListActivity::class.java)
+        startActivity(intent)
+    }
+    fun navigateToSettings(): Unit {
+        val intent = Intent(this, SettingsActivity::class.java)
         startActivity(intent)
     }
 }

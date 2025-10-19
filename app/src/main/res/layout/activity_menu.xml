@@ -40,4 +40,12 @@
         android:layout_marginTop="10dp"
         android:background="@color/peso_normal"
         android:text="@string/heroApp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/superhero_stat_durability"
+        android:text="@string/settingApp" />
 </LinearLayout>

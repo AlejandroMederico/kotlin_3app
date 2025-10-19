@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#9F6BFF</color>
+    <color name="purple_700">#7E57C2</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- IMC (ajustados para mejor contraste en fondo oscuro) -->
+    <color name="background_component">#27293D</color>
+    <color name="background_component_selected">#1E1E2F</color>
+    <color name="background_app">#0B0B1C</color>
+    <color name="background_button">#FF4081</color>
+    <color name="title_text">#FFBDBDBD</color>
+
+    <color name="peso_bajo">#FFF176</color>
+    <color name="peso_normal">#81C784</color>
+    <color name="peso_sobrepeso">#FF8A65</color>
+    <color name="obesidad">#EF5350</color>
+
+    <!-- ToDo (tono más apagado para modo oscuro) -->
+    <color name="todo_background_card">#112240</color>
+    <color name="todo_background_disabled">#505050</color>
+    <color name="background_todo_app">#1A3F8E</color>
+    <color name="todo_subtitle_text">#B0B0B0</color>
+    <color name="todo_accent">#FF4081</color>
+
+    <color name="todo_business_category">#FFA726</color>
+    <color name="todo_personal_category">#26C6DA</color>
+    <color name="todo_other_category">#81C784</color>
+
+    <!-- Super Hero -->
+    <color name="super_name">#661F32BC</color>
+    <color name="superhero_stat_intelligence">#00E676</color>
+    <color name="superhero_stat_strength">#FF5252</color>
+    <color name="superhero_stat_speed">#FFA726</color>
+    <color name="superhero_stat_durability">#29B6F6</color>
+    <color name="superhero_stat_power">#FFEB3B</color>
+    <color name="superhero_stat_combat">#9575CD</color>
+
+    <!-- Settings -->
+    <color name="setting_title">#FFFFFFFF</color>
+</resources>
